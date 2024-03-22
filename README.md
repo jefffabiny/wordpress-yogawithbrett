@@ -1,12 +1,6 @@
 # rochester.dev Wordpress Core
 
-This is a rochester.dev project intended for quick templating for new clients.
-
-## Features
-
-This project features a barebones templates for pages, posts, and a front page.
-It includes a responsive mobile-first nav.
-It is initialized with a single css and js file for customizations.
+This is a rochester.dev project for my client, [Yoga with Brett](http://www.yogawithbrett.com).
 
 ## Getting Started
 
@@ -27,11 +21,11 @@ To get started with this project, follow these steps:
 
 ## Customization
 
-This project comes as a basic WordPress theme. You can customize the theme by modifying the files in the `wp-content/themes/your-theme-name` directory.
+You can customize the theme by modifying the files in the `wp-content/themes/yogawithbrett` directory.
 
 ## Usage
 
-- Use the WordPress admin dashboard (`yoursite.com/wp-admin`) to manage your site's content, install plugins, and configure settings.
+- Use the WordPress admin dashboard (`yogawithbrett.com/wp-admin`) to manage the site's content, install plugins, and configure settings.
 - You can add new posts and pages, customize the theme appearance, and extend functionality with plugins.
 
 ## Contributing
