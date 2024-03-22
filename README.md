@@ -1,6 +1,6 @@
-# rochester.dev Wordpress Core
+# rochester.dev - [yogawithbrett.com](https://yogawithbrett.com)
 
-This is a rochester.dev project for my client, [Yoga with Brett](http://www.yogawithbrett.com).
+This is a rochester.dev wordpress template for my client, [Yoga with Brett](https://www.yogawithbrett.com).
 
 ## Getting Started
 
