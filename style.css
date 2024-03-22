@@ -1,0 +1,100 @@
+/*
+Theme Name: rochester.dev Wordpress Core
+Description: A minimal WordPress theme.
+Version: 1.0
+*/
+
+* {
+  box-sizing: border-box;
+  color: #000;
+}
+
+/* header  */
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.site-header > .container {
+  align-items: flex-start;
+}
+
+/* navigation */
+.site-navigation {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-top: 29px;
+}
+.primary-menu {
+  height: 0px;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  text-align: right;
+  transition: 0.9s;
+  width: 0px;
+}
+.primary-menu li {
+  overflow: hidden; /* Hide any overflow text */
+  text-overflow: ellipsis;
+  max-width: 99px;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+.menu-toggle {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.menu-toggle .bar {
+  background-color: #000;
+  display: block;
+  height: 2px;
+  width: 20px;
+  margin: 2px;
+  transition: transform 0.8s ease;
+}
+.menu-toggle.active .bar:nth-child(2) {
+  transform: scaleX(0); /* Middle bar collapses */
+}
+.menu-toggle.active .bar:first-child {
+  transform: translateY(6px) rotate(45deg); /* Rotate and move top bar */
+}
+.menu-toggle.active .bar:last-child {
+  transform: translateY(-6px) rotate(-45deg); /* Rotate and move bottom bar */
+}
+.site-navigation.expanded .primary-menu {
+  height: 300px;
+  width: 100px;
+}
+
+/* blog */
+main > .container {
+  flex-direction: column;
+}
+article {
+  width: 100%;
+}
+
+/* other */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.content {
+  margin-top: 100px; /* Adjust according to the height of header */
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+}
