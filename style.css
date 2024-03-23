@@ -29,7 +29,7 @@ Version: 1.0
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  margin-top: 29px;
+  margin-top: 16px;
 }
 .primary-menu {
   height: 0px;
@@ -73,7 +73,7 @@ Version: 1.0
 }
 .site-navigation.expanded .primary-menu {
   height: 300px;
-  width: 100px;
+  width: 300px;
 }
 
 /* blog */
@@ -96,5 +96,16 @@ article {
 }
 
 /* Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
+  .menu-toggle {
+    display: none;
+  }
+  .primary-menu {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  .primary-menu > * {
+    margin: 0 10px;
+  }
 }

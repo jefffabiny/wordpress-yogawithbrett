@@ -13,7 +13,7 @@
     <header class="site-header">
         <div class="container">
             <div class="site-branding">
-                <h1 class="site-title"><?php bloginfo('name'); ?></h1>
+                <img class="logo" src="<?php echo get_template_directory_uri() ?>/assets/logo.png" />
             </div>
             <nav id="site-navigation" class="site-navigation">
                 <div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
