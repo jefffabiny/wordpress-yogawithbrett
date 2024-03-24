@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.png" type="image/x-icon">
 </head>
 
 <body <?php body_class(); ?>>
     <header class="site-header">
         <div class="container">
             <div class="site-branding">
-                <img class="logo" src="<?php echo get_template_directory_uri() ?>/assets/logo.png" />
+                <a class="go-home" href="/"></a>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.png" />
+                <div class="site-title"><?php bloginfo('name'); ?></div>
             </div>
             <nav id="site-navigation" class="site-navigation">
                 <div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
