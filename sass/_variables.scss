@@ -12,3 +12,27 @@ $warning-color: #ff9101;
 $info-color: #a2c4fa;
 $grey1-color: #b1b1ae;
 $grey2-color: #726f6b;
+
+// Define font variables
+$primary-font-family: "Baskerville", serif;
+$secondary-font-family: "Montserrat", sans-serif;
+$font-size-base: 16px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Apply font face using variables
+body {
+  font-family: $primary-font-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font-family;
+  font-weight: $font-weight-bold;
+}
