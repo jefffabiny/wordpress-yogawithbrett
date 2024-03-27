@@ -4,11 +4,14 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
+  font-weight: $font-weight-bold;
+  margin: 0 50px;
+  color: $tertiary-color;
 }
 
 header.site-header {
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: #fff;
 
   a,
@@ -26,4 +29,77 @@ header.site-header {
 }
 .content .container {
   padding: 0;
+}
+
+// header spacing
+.wp-block-cover {
+  p {
+    margin: 0;
+    line-height: 35px;
+  }
+
+  .wp-block-button {
+    margin-top: 15px;
+  }
+}
+article p {
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  + .wp-block-buttons {
+    margin: 0 50px;
+  }
+}
+
+// Logo
+.site-branding img {
+  width: 35px;
+}
+
+// Floating img helper class
+body .content .float-me {
+  margin: 50px;
+  img {
+    @include image-drop-shadow();
+  }
+}
+
+// Footer
+footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 100px 0;
+  font-size: 18px;
+
+  a,
+  a:active,
+  a:visited {
+    color: #fff;
+    margin: 5px;
+    font-family: $secondary-font-family;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  p {
+    margin: 5px;
+    font-family: $secondary-font-family;
+    text-align: center;
+  }
+
+  .insta {
+    width: 30px;
+  }
+
+  .cite {
+    font-size: 14px;
+  }
 }

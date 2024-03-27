@@ -27,12 +27,11 @@ body {
   font-weight: $font-weight-normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $secondary-font-family;
-  font-weight: $font-weight-bold;
+@mixin image-drop-shadow(
+  $shadow-color: rgba(0, 0, 0, 0.5),
+  $shadow-offset-x: 0,
+  $shadow-offset-y: 5px,
+  $shadow-blur: 20px
+) {
+  box-shadow: $shadow-offset-x $shadow-offset-y $shadow-blur $shadow-color;
 }

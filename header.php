@@ -14,7 +14,7 @@
         <div class="container">
             <div class="site-branding">
                 <a class="go-home" href="/"></a>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.png" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png" />
             </div>
             <nav id="site-navigation" class="site-navigation">
                 <div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
