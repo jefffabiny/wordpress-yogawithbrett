@@ -44,7 +44,6 @@ a:hover {
   align-items: center;
   display: flex;
   overflow: hidden; /* Hide any overflow text */
-  padding-top: 21px;
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap; /* Prevent text from wrapping */
@@ -148,11 +147,11 @@ footer {
   .site-header > .container {
     padding-bottom: 20px;
   }
-  .site-branding {
-    padding-top: 15px;
-  }
   .site-navigation {
-    margin-top: 0;
+    margin-top: 10px;
+  }
+  .content {
+    margin-top: 93px;
   }
   .menu-toggle {
     display: none;

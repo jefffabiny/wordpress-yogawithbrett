@@ -11,6 +11,7 @@ $front_page_url = get_permalink($front_page_id);
     <div class="container">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png" />
         <p>YOGA WITH BRETT</p>
+        <div class="space-50"></div>
         <a href="mailto:hello@yogawithbrett.com">hello@yogawithbrett.com</a>
         <a href="tel:5555555555">(555) 555-5555</a>
         <a href=""><img class="insta" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/insta.png" /></a>

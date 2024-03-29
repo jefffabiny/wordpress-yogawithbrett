@@ -12,19 +12,19 @@ h4 {
 
 header.site-header {
   background-color: $secondary-color;
-  color: #fff;
+  color: $tertiary-color;
 
   a,
   a:active,
   a:visited {
-    color: #fff;
+    color: $tertiary-color;
   }
   a:hover {
     color: $primary-shade;
   }
 
   .menu-toggle .bar {
-    background-color: #fff;
+    background-color: $tertiary-color;
   }
 }
 .content .container {
@@ -38,8 +38,9 @@ header.site-header {
     line-height: 35px;
   }
 
-  .wp-block-button {
+  .wp-block-buttons {
     margin-top: 15px;
+    max-width: 300px;
   }
 }
 article p {
@@ -48,14 +49,21 @@ article p {
   padding-left: 50px;
   padding-right: 50px;
 
-  + .wp-block-buttons {
-    margin: 0 50px;
+  .wp-block-button {
+    transition: 0.2s;
+    &:hover {
+      background-color: $primary-color;
+    }
   }
+}
+
+.wp-block-buttons {
+  margin: 0 50px;
 }
 
 // Logo
 .site-branding img {
-  width: 35px;
+  width: 62px;
 }
 
 // Floating img helper class
@@ -71,14 +79,16 @@ footer {
   background-color: $primary-color;
   color: #fff;
   padding: 100px 0;
-  font-size: 18px;
+  font-size: 16px;
 
   a,
   a:active,
   a:visited {
     color: #fff;
-    margin: 5px;
+    margin: 4px;
     font-family: $secondary-font-family;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .container {
@@ -90,7 +100,7 @@ footer {
   }
 
   p {
-    margin: 5px;
+    margin: 4px;
     font-family: $secondary-font-family;
     text-align: center;
   }
@@ -101,5 +111,24 @@ footer {
 
   .cite {
     font-size: 14px;
+    a {
+      text-decoration: none;
+      font-weight: normal;
+    }
   }
+}
+
+.space-50 {
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .bump-on-mobile {
+    margin-top: 70px;
+  }
+}
+
+.content ul {
+  list-style: square;
+  padding-left: 64px;
 }
