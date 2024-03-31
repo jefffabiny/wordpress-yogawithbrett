@@ -9,4 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.setAttribute("aria-expanded", expanded);
     menuToggle.classList.toggle("active");
   });
+
+  document
+    .getElementById("scrollbutton")
+    .addEventListener("click", function () {
+      var iframe = document.getElementById("scroll-target");
+
+      // Scroll to the position of the iframe on the page
+      iframe.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
 });
