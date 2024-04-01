@@ -19,16 +19,12 @@ $front_page_url = get_permalink($front_page_id);
             <style type="text/css">
                 #mc_embed_signup {
                     background: #fff;
-                    false;
                     clear: left;
                     font: 14px Helvetica, Arial, sans-serif;
                     width: 600px;
                 }
-
-                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
             </style>
-            <div id="mc_embed_signup" style="background:none;width:400px">
+            <div id="mc_embed_signup" style="background:none;width:390px">
                 <form action="https://yogawithbrett.us18.list-manage.com/subscribe/post?u=6da85e011b4241a80741a8411&amp;id=18713a6c36&amp;f_id=0092c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                     <div id="mc_embed_signup_scroll">
                         <p style="text-align:left;margin:0">Keep up with the latest</p>
@@ -44,7 +40,6 @@ $front_page_url = get_permalink($front_page_id);
                         <div class="optionalParent">
                             <div class="clear foot">
                                 <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/iM8s9Q" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p> -->
                             </div>
                         </div>
                     </div>
